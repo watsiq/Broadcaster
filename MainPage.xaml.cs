@@ -54,7 +54,7 @@ namespace Broadcaster
 
         private void SendData(object sender, RoutedEventArgs e)
         {
-            rmq.SendMessage(TextBox1.Text);
+            rmq.SendMessage(TextBox.Text, "", TextBox1.Text);
         }
     }
 }

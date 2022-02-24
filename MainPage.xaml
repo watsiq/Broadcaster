@@ -6,19 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Azure" Width="954">
+    Background="Azure">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="207*"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Tujuan" Margin="50,20,57,612" FontSize="48" OpticalMarginAlignment="None" TextAlignment="Center"></TextBlock>
-        <TextBox x:Name="TextBox" Margin="50,89,51,545" TextWrapping="NoWrap"></TextBox>
-        <TextBox x:Name="TextBox1" Margin="50,286,51,348" TextWrapping="NoWrap"/>
-        <TextBlock Text="Pesan (Angka)" Margin="50,217,59,415" FontSize="48" OpticalMarginAlignment="None" TextAlignment="Center"/>
-        <Button x:Name="Button" Background="#33000000" Width="380" Height="105" Margin="518,415,0,0" VerticalAlignment="Top" Content="Kirim Data" FontSize="48" IsEnabled="False" Click="SendData"/>
-        <Button x:Name="Button1" Background="#33000000" Width="380" Height="105" Margin="287,562,0,0" VerticalAlignment="Top" Content="Disconnect" FontSize="48" IsEnabled="False" Click="CloseRMQ"/>
-        <Button x:Name="Button3" Background="#33000000" Width="380" Height="105" Margin="50,415,0,0" VerticalAlignment="Top" Content="Connect" FontSize="48" Click="PageLoadConnect"/>
+        <TextBlock Text="Tujuan Broadcast" Margin="50,5,57,627" FontSize="48" OpticalMarginAlignment="None" TextAlignment="Center"></TextBlock>
+        <TextBox x:Name="TextBox" Margin="50,104,51,530" TextWrapping="NoWrap"></TextBox>
+        <TextBox x:Name="TextBox1" Margin="50,301,51,333" TextWrapping="NoWrap"/>
+        <TextBlock Text="Pesan" Margin="50,205,58,427" FontSize="48" OpticalMarginAlignment="None" TextAlignment="Center"/>
+        <Button x:Name="Button" Background="#33000000" Width="380" Height="105" Margin="849,430,0,0" VerticalAlignment="Top" Content="Kirim Data" FontSize="48" IsEnabled="False" Click="SendData"/>
+        <Button x:Name="Button1" Background="#33000000" Width="380" Height="105" Margin="0,559,0,0" VerticalAlignment="Top" Content="Disconnect" FontSize="48" IsEnabled="False" Click="CloseRMQ" HorizontalAlignment="Center"/>
+        <Button x:Name="Button3" Background="#33000000" Width="380" Height="105" Margin="50,430,0,0" VerticalAlignment="Top" Content="Connect" FontSize="48" Click="PageLoadConnect"/>
     </Grid>
 </Page>

@@ -51,11 +51,11 @@ namespace Broadcaster
                 //Console.WriteLine("Queue telah dideklarasikan..");
             }
         }               
-        public void SendMessage(string msg = "send")
+        public void SendMessage(string exchange_name = "logs", string routingKey = "", string msg = "send")
         {
             byte[] responseBytes = Encoding.UTF8.GetBytes(msg);// konversi pesan dalam bentuk string menjadi byte
 
-            channel.BasicPublish(exchange: "logs",
+            channel.BasicPublish (exchange:exchange_name,
                                     routingKey: "", 
                                     basicProperties: null,
                                     body: responseBytes);
